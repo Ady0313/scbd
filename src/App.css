@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  background: #272b34;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2d343e;
+  padding: 20px;
+  color: white;
+  width: 100vw; /* Ensures full viewport width */
+}
+
+.logo-container {
+  max-width: 150px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-height: 65px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fe8033;
+}
+
+/* Footer */
+footer {
+  background: #2d343e;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  width: 100%; /* Ensures it spans full width */
+  flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1rem;
+  flex: 1; /* Ensures this takes up the full width */
+}
+
+.footer-image {
+  margin-left: 20px;
+}
+
+.footer-image img {
+  width: 80px; /* Increased size */
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: left;
+  max-width: 50%;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Landing Image */
+.landing-image {
+  max-width: 40%;
+  position: relative;
+  animation: float 5s ease-in-out infinite;
+}
+
+.landing-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-image img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #fe8033;
+  border-radius: 35px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff5c00;
+}
+
+/* Footer Styles */
+footer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  position:relative;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;  /* Ensure it's fixed at the bottom */
+  bottom:0%;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer .footer-text {
+  flex: 1;
+}
+
+footer .footer-image {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+footer .footer-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+footer .float-image {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Adjust GIF size */
+.animated-gif {
+  max-width: 250px; /* Adjusted size for the gif */
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animated-gif {
+  animation: gifAnimation 3s infinite alternate;
+}
+
+@keyframes gifAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
