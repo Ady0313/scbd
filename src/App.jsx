@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
-import Header from './components/header';
+import Header from './components/Header';
 import hackingGif from './assets/coding.gif'; // Adjust path as needed
 
 function App() {
