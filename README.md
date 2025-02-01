@@ -1,6 +1,4 @@
-Here’s an improved version of your `README.md` for better clarity and organization:
-
- SCBD
+## SCBD
 
 ## Project Overview
 
