@@ -1,7 +1,6 @@
 Here’s an improved version of your `README.md` for better clarity and organization:
 
-```markdown
-# SCBD
+ SCBD
 
 ## Project Overview
 
@@ -82,5 +81,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Feel free to contribute, report issues, or suggest improvements by opening an issue or submitting a pull request. Happy learning!
 ```
-
-This version improves readability, adds structure to the instructions, and highlights key points clearly. Feel free to adjust any part to match your exact project setup!
